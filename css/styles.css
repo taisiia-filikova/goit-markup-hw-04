@@ -154,15 +154,29 @@ header {
 /* Hero */
 .hero {
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  background-color: var(--footer-bgc);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/Banner.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 46;
+  margin-bottom: 30;
+  padding-top: 200px;
 
   color: var(--primary-white-color);
-  /* временно, чтоб не терялся белый цвет шрифта */
-  background-color: var(--paragraph-colour);
 
   font-weight: 900;
   font-size: 44px;
@@ -312,6 +326,10 @@ header {
   margin-top: 0;
   margin-bottom: 0;
 }
+.people .item {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
 
 .face {
   display: block;
@@ -371,6 +389,10 @@ header {
   min-width: 20px;
   min-height: 20px;
   padding: 12px;
+}
+
+.social-network > .item {
+  box-shadow: none;
 }
 
 .social-network .item + .item {
@@ -584,6 +606,10 @@ header {
   margin-top: 0;
   margin-bottom: 0;
   justify-content: center;
+}
+.works .item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .works .item:not(:nth-child(3n)) {
