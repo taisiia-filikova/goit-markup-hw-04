@@ -46,7 +46,7 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 }
 
 .visually-hidden {
