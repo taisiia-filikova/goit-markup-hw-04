@@ -85,9 +85,21 @@ header {
 }
 
 .header-contacts .link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+/* .header-contacts .icon:hover {
+  --color4: var(--paragraph-colour);
+} */
+
+.header-contacts .cover {
+  width: 16px;
+}
+.header-contacts .phone {
+  width: 10px;
 }
 /* Logo */
 .logo {
