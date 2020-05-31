@@ -422,8 +422,32 @@ header {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  min-width: 170px;
-  min-height: 90px;
+  width: 170px;
+  height: 90px;
+}
+
+.customers .icon:hover,
+.customers .icon:focus {
+  --color3: var(--accent-color);
+}
+
+.customers .company1 {
+  width: 44px;
+}
+.customers .company2 {
+  width: 40px;
+}
+.customers .company3 {
+  width: 41px;
+}
+.customers .company4 {
+  width: 79px;
+}
+.customers .company5 {
+  width: 59px;
+}
+.customers .company6 {
+  width: 88px;
 }
 
 /* Footer */
@@ -499,6 +523,25 @@ header {
   margin-left: 10px;
 }
 
+.social-networks .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-networks .item:hover {
+  background-color: var(--accent-color);
+}
+.footer-icon {
+  --color3: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
+}
+
 .footer-title {
   margin-bottom: 21px;
 
@@ -528,7 +571,7 @@ header {
   min-width: 200px; */
 
 .button-footer {
-  display: inline-block;
+  display: flex;
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
@@ -542,6 +585,14 @@ header {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+.plane {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  /* padding-top: 13px;
+  padding-bottom: 13px; */
 }
 
 /* Copiright */
