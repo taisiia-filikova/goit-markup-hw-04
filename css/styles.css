@@ -97,10 +97,12 @@ header {
 
 .header-contacts .cover {
   width: 16px;
+  height: 11px;
   margin-right: 10px;
 }
 .header-contacts .phone {
   width: 10px;
+  height: 15px;
   margin-right: 10px;
 }
 /* Logo */
@@ -235,10 +237,10 @@ header {
   margin-bottom: 30px;
 }
 
-.background:hover,
+/* .background:hover,
 .background:focus {
   background-color: var(--accent-color);
-}
+} */
 
 .advantages .img {
   display: block;
@@ -397,20 +399,20 @@ header {
   /* outline: 2px solid salmon; */
 }
 
-/* .social-network > .item img {
+.social-network > .item img {
   display: block;
   min-width: 20px;
   min-height: 20px;
-  padding: 12px; */
-}
+  padding: 12px;
+ }
 
 .team-icon {
-  display: flex;
+  display: block;
   width: 20px;
   height: 20px;
 
   padding: 12px;
-  --color2: #afb1b8;
+ fill: currentColor;
 }
 
 .social-network > .item {
@@ -557,9 +559,11 @@ header {
 }
 .social-networks .item:hover {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 .footer-icon {
-  --color3: var(--primary-white-color);
+  /* --color3: var(--primary-white-color); */
+  fill; --color3: var(--primary-white-color);
   width: 20px;
   height: 20px;
 }
@@ -576,8 +580,12 @@ header {
 }
 /* Form &Button */
 
-.form {
+.subscribe {
   margin-left: auto;
+}
+
+.form{
+  display: flex;
 }
 
 .e-mail {
@@ -596,6 +604,7 @@ header {
   display: flex;
   border-radius: 4px;
   min-width: 200px;
+  min-height: 50px;
   padding: 10px 32px;
   margin-left: 12px;
 
@@ -669,6 +678,7 @@ header {
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  cursor: pointer;
 }
 
 /* Works */
