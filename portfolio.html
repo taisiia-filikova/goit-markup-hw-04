@@ -35,13 +35,16 @@
         <ul class="nav header-contacts">
           <li class="item">
             <a href="mailto:info@devstudio.com " class="link contacts">
-              <img src="./img/cover_icon.svg" alt="Cover" />
-              info@devstudio.com</a
+              <svg class="icon cover">
+                <use href="./img/sprite.svg#cover_icon"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link contacts">
-              <img src="./img/phone_icon.svg" alt="Phone" />
+              <svg class="icon phone">
+                <use href="./img/sprite.svg#phone_icon"></use>
+              </svg>
               +38 096 111 11 11</a
             >
           </li>
@@ -240,8 +243,10 @@
                 class="link"
                 target="_blank"
                 aria-label="Ссылка на Instagram"
-                >Instagram</a
               >
+                <svg class="footer-icon">
+                  <use href="./img/sprite.svg#instagram"></use></svg
+              ></a>
             </li>
             <li class="item">
               <a
@@ -249,8 +254,10 @@
                 class="link"
                 target="_blank"
                 aria-label="Ссылка на Twitter"
-                >Twitter</a
               >
+                <svg class="footer-icon">
+                  <use href="./img/sprite.svg#twitter"></use></svg
+              ></a>
             </li>
             <li class="item">
               <a
@@ -258,8 +265,10 @@
                 class="link"
                 target="_blank"
                 aria-label="Ссылка на Facebook"
-                >Facebook</a
               >
+                <svg class="footer-icon">
+                  <use href="./img/sprite.svg#facebook"></use></svg
+              ></a>
             </li>
             <li class="item">
               <a
@@ -267,17 +276,23 @@
                 class="link"
                 target="_blank"
                 aria-label="Ссылка на LinkedIn"
-                >LinkedIn</a
-              >
+                ><svg class="footer-icon">
+                  <use href="./img/sprite.svg#linkedin"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
-        <div class="form">
+        <div class="subscribe">
           <h2 class="footer-title">подписаться на рассылку</h2>
-          <form>
+          <form class="form">
             <label class="e-mail">Email</label>
             <input type="email" name="E-mail" />
-            <button class="button-footer">Подписаться</button>
+            <button class="button-footer">
+              Подписаться
+              <svg class="plane">
+                <use href="./img/sprite.svg#plane"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
