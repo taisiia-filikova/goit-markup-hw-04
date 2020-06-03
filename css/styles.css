@@ -246,8 +246,7 @@ header {
   display: block;
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
-}
+  }
 
 .advantages .item .title {
   margin: 0;
@@ -406,13 +405,18 @@ header {
   padding: 12px;
  }
 
+ .social-network > .item a {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
 .team-icon {
   display: block;
   width: 20px;
   height: 20px;
 
-  padding: 12px;
- fill: currentColor;
+  fill: currentColor;
 }
 
 .social-network > .item {
@@ -457,21 +461,27 @@ header {
 
 .customers .company1 {
   width: 44px;
+  height: 49px;
 }
 .customers .company2 {
   width: 40px;
+  height: 52px;
 }
 .customers .company3 {
   width: 41px;
+  height: 42px;
 }
 .customers .company4 {
   width: 79px;
+  height: 42px;
 }
 .customers .company5 {
   width: 59px;
+  height: 47px;
 }
 .customers .company6 {
   width: 88px;
+  height: 45px;
 }
 
 /* Footer */
@@ -672,6 +682,7 @@ header {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border: none;
 }
 
 .button-portfolio:hover,
