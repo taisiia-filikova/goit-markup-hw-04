@@ -162,7 +162,8 @@ header {
   letter-spacing: 0.02em;
 }
 
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--accent-color);
 }
 
@@ -398,12 +399,6 @@ header {
   /* outline: 2px solid salmon; */
 }
 
-.social-network > .item img {
-  display: block;
-  min-width: 20px;
-  min-height: 20px;
-}
-
 .social-network > .item a {
   display: flex;
   justify-content: center;
@@ -416,7 +411,8 @@ header {
   margin-left: 10px;
 }
 
-.social-network > .item a:hover {
+.social-network > .item a:hover,
+.social-network > .item a:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   cursor: pointer;
@@ -429,7 +425,8 @@ header {
   fill: #afb1b8;
 }
 
-.team-icon:hover {
+.team-icon:hover,
+.team-icon:focus {
   fill: var(--primary-white-color);
 }
 
