@@ -246,7 +246,7 @@ header {
   display: block;
   width: 70px;
   height: 70px;
-  }
+}
 
 .advantages .item .title {
   margin: 0;
@@ -402,29 +402,39 @@ header {
   display: block;
   min-width: 20px;
   min-height: 20px;
-  padding: 12px;
- }
+}
 
- .social-network > .item a {
-   display: flex;
+.social-network > .item a {
+  display: flex;
   justify-content: center;
   align-items: center;
- }
+  width: 44px;
+  height: 44px;
+}
+
+.social-network .item + .item {
+  margin-left: 10px;
+}
+
+.social-network > .item a:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .team-icon {
   display: block;
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
 
-  fill: currentColor;
+.team-icon:hover {
+  fill: var(--primary-white-color);
 }
 
 .social-network > .item {
   box-shadow: none;
-}
-
-.social-network .item + .item {
-  margin-left: 10px;
 }
 
 /* Customers */
@@ -572,10 +582,10 @@ header {
   cursor: pointer;
 }
 .footer-icon {
-  /* --color3: var(--primary-white-color); */
-  fill; --color3: var(--primary-white-color);
   width: 20px;
   height: 20px;
+
+  fill: var(--primary-white-color);
 }
 
 .footer-title {
@@ -594,7 +604,7 @@ header {
   margin-left: auto;
 }
 
-.form{
+.form {
   display: flex;
 }
 
