@@ -150,6 +150,20 @@ header {
 
 .nav .current {
   color: var(--accent-color);
+  position: relative;
+}
+
+.nav .current::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
 }
 
 /* Tel & E-mail */
@@ -298,13 +312,21 @@ header {
   min-width: 370px;
 }
 
+.activity .item {
+  position: relative;
+}
+
 .activity-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   margin: 0;
   padding: 27px 0;
 
   color: var(--primary-white-color);
-  /* временно, чтоб не терялся белый цвет шрифта */
-  background-color: var(--paragraph-colour);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
 
   font-weight: 700;
   font-size: 14px;
@@ -724,6 +746,28 @@ header {
   margin-bottom: 30px;
 }
 
+.works .project {
+  position: relative;
+}
+
+.project::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+.works .item:hover .project::before,
+.works .item:focus .project::before {
+  opacity: 1;
+}
+
 .works img {
   display: block;
   border-top-left-radius: 5px;
@@ -743,7 +787,7 @@ header {
   background-color: var(--primary-white-color);
 }
 
-.project {
+.project-name {
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
@@ -756,12 +800,30 @@ header {
   font-size: 16px;
   line-height: 1.87;
 }
-.works .description {
-  display: none;
+
+.thumb {
+  position: relative;
+}
+
+/* .works .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+
+  color: red;
   color: var(--primary-white-color);
-  /* временно, чтоб не терялся белый цвет шрифта */
-  background-color: var(--accent-color);
 
   font-size: 18px;
   line-height: 1.56;
+  padding: 63px 24px;
+
+  opacity: 0;
 }
+
+.works .item:hover .description {
+  opacity: 1;
+} */
