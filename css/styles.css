@@ -732,7 +732,8 @@ header {
   margin-bottom: 0;
   justify-content: center;
 }
-.works .item:hover {
+.works .item:hover,
+.works .item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -761,10 +762,13 @@ header {
   height: 100%;
 
   background-color: rgba(33, 150, 243, 0.9);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
   opacity: 0;
 }
-.works .item:hover .project::before,
-.works .item:focus .project::before {
+.project:hover::before,
+.project:hover::before {
   opacity: 1;
 }
 
@@ -805,7 +809,7 @@ header {
   position: relative;
 }
 
-/* .works .description {
+.description {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -815,15 +819,15 @@ header {
   height: 100%;
 
   color: red;
-  color: var(--primary-white-color);
+  /* color: var(--primary-white-color); */
 
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;
 
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-.works .item:hover .description {
+/* .works .thumb:hover .description {
   opacity: 1;
 } */
